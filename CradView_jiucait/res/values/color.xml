@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="home_card_text">#6b728e</color>
+    <color name="divider">#DDDDDD</color>
+    <color name="home_earnings">#ff514e</color>
+    <color name="home_money">#6b718f</color>
+    <color name="red">#ff0033</color>
+    <color name="backgroud_huise">#22000000</color>
+    <color name="assist">#969696</color>
+
+</resources>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- corners_bg -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/show_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="卫士计划B-20160113"
+                android:textColor="@color/home_card_text" />
+
+            <TextView
+                android:id="@+id/tbqx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/sy_qitoujine"
+                android:drawablePadding="2dip"
+                android:padding="3dp"
+                android:text="2000元起投"
+                android:textColor="@color/home_card_text"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dip"
+            android:layout_marginLeft="7dip"
+            android:layout_marginRight="7dip"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/earnings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="23dip"
+                            android:text="15.5"
+                            android:textColor="@color/home_earnings"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/addannualized"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+15.5"
+                            android:textColor="@color/home_earnings"
+                            android:textSize="22sp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/baifenhao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:text="%"
+                            android:textColor="@color/home_earnings"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="23dip"
+                        android:layout_marginTop="5dip"
+                        android:text="年化收益率"
+                        android:textColor="@color/home_card_text"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="23dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="6"
+                            android:textColor="@color/home_money"
+                            android:textSize="21sp" />
+
+                        <TextView
+                            android:id="@+id/months"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:text="个月"
+                            android:textColor="@color/home_money"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/deadline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="23dip"
+                        android:layout_marginTop="6dp"
+                        android:text="期限"
+                        android:textColor="@color/home_card_text"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_project_mb_jd"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="3dip"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <com.jack.cardviewdemo.CircleProgressView
+                        android:id="@+id/circleProgressbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip" />
+
+                    <TextView
+                        android:id="@+id/qiang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="抢  "
+                        android:textColor="@color/red"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.25dip"
+        android:layout_marginLeft="7dip"
+        android:layout_marginRight="7dip"
+        android:background="@color/divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dip" >
+
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:src="@drawable/tzlb04"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="9dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/home_card_text"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingBottom="60dip"
+            android:text="理财有风险     投资需谨慎"
+            android:textColor="@color/backgroud_huise"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>
